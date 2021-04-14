@@ -1,0 +1,26 @@
+[
+	{
+		"id": "1",
+		"title": "Places to stay in Rome",
+		"slug": "places-to-stay-in-rome",
+		"content": "Here is a list of the 3 best places to stay in Rome:\n\n<p><strong>Hotel 1</strong>\nHotel 1 description</p>\n<p><strong>Hotel 2</strong>\nHotel 2 description</p>\n<p><strong>Hotel 3</strong>\nHotel 3 description</p>"
+	},
+	{
+		"id": "2",
+		"title": "Places to stay in Paris",
+		"slug": "places-to-stay-in-paris",
+		"content": "<p><h1>Paris</h1><br />Here is a list of the best places to stay in Paris:</p>\n<p><strong>Hotel 1</strong>\nHotel 1 description</p>\n<p><strong>Hotel 2</strong>\nHotel 2 description</p>"
+	},
+	{
+		"id": "3",
+		"title": "Places to visit in New York",
+		"slug": "places-to-visit-in-new-york",
+		"content": "<p><h1>New York</h1></p><img src=\"https://via.placeholder.com/1600x1200\" alt=\"New York\">"
+	},
+	{
+		"id": "4",
+		"title": "",
+		"slug": "",
+		"content": ""
+	}
+]

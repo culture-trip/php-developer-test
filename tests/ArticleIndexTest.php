@@ -1,12 +1,15 @@
 <?php
 
 use Tests\TestCase;
+use Spatie\Snapshots\MatchesSnapshots;
 
 class ArticleIndexTest extends TestCase {
-	public function testIndexReturnsText() : void {
+	use MatchesSnapshots;
+
+	public function testIndexReturnsArticles() : void {
 		$request = $this->createRequest( 'GET', '/' );
 		$res     = $this->app->handle( $request );
 
-		self::assertEquals( 'Hello world!', (string) $res->getBody() );
+		$this->assertMatchesJsonSnapshot( (string) $res->getBody() );
 	}
 }

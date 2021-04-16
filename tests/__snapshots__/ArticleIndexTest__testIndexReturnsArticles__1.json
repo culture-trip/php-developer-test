@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "title": "Places to stay in Rome",
+        "slug": "places-to-stay-in-rome",
+        "content": [
+            {
+                "type": "paragraph",
+                "content": "Here is a list of the 3 best places to stay in Rome: "
+            },
+            {
+                "type": "paragraph",
+                "content": "Hotel 1"
+            },
+            {
+                "type": "paragraph",
+                "content": " Hotel 1 description "
+            },
+            {
+                "type": "paragraph",
+                "content": "Hotel 2"
+            },
+            {
+                "type": "paragraph",
+                "content": " Hotel 2 description "
+            },
+            {
+                "type": "paragraph",
+                "content": "Hotel 3"
+            },
+            {
+                "type": "paragraph",
+                "content": " Hotel 3 description"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Places to stay in Paris",
+        "slug": "places-to-stay-in-paris",
+        "content": [
+            {
+                "type": "paragraph",
+                "content": "<h1>Paris<\/h1><br \/>Here is a list of the best places to stay in Paris:"
+            },
+            {
+                "type": "paragraph",
+                "content": " "
+            },
+            {
+                "type": "paragraph",
+                "content": "<strong>Hotel 1<\/strong> Hotel 1 description"
+            },
+            {
+                "type": "paragraph",
+                "content": " "
+            },
+            {
+                "type": "paragraph",
+                "content": "<strong>Hotel 2<\/strong> Hotel 2 description"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Places to visit in New York",
+        "slug": "places-to-visit-in-new-york",
+        "content": [
+            {
+                "type": "paragraph",
+                "content": "<h1>New York<\/h1>"
+            },
+            {
+                "type": "image",
+                "src": "https:\/\/via.placeholder.com\/1600x1200",
+                "alt": "New York"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "",
+        "slug": "",
+        "content": []
+    }
+]

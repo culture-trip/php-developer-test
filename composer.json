@@ -11,11 +11,14 @@
     "require": {
         "slim/slim": "4.*",
         "guzzlehttp/psr7": "^1.8",
-        "http-interop/http-factory-guzzle": "^1.0"
+        "http-interop/http-factory-guzzle": "^1.0",
+	    "ext-json": "*",
+        "paquettg/php-html-parser": "^3.1"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.5",
+        "spatie/phpunit-snapshot-assertions": "^4.2"
     },
     "autoload": {
         "psr-4": {

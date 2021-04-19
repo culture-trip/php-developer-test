@@ -9,7 +9,12 @@ abstract class ArticleCollection {
 		return $this->articles;
 	}
 
-	public function getArticleById( int $id ) : ?array {
+	/**
+	 * @param int $id
+	 *
+	 * @return array|object|null
+	 */
+	public function getArticleById( int $id ) {
 		foreach ( $this->articles as $article ) {
 			if (
 				( is_object( $article ) && (int) $article->id === $id ) ||

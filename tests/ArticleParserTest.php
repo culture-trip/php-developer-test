@@ -2,11 +2,8 @@
 
 use Tests\TestCase;
 use App\ArticleParser;
-use Spatie\Snapshots\MatchesSnapshots;
 
 class ArticleParserTest extends TestCase {
-	use MatchesSnapshots;
-
 	private $articleId = 0;
 
 	private function _getArticleDataStub( string $content, string $title = null, string $slug = null ) : array {

@@ -2,16 +2,16 @@
 
 namespace App;
 
-use Exception;
-
 class ArticleService extends ArticleCollection {
 	/**
-	 * @throws Exception
+	 * @param array|null $articles
 	 */
-	public function __construct() {
-		$rawArticles = ( new ArticleDataSource() )->getArticles();
+	public function __construct( array $articles = null ) {
+		if ( ! $articles ) {
+			$articles = ( new ArticleDataSource() )->getArticles();
+		}
 
-		foreach ( $rawArticles as $article ) {
+		foreach ( $articles as $article ) {
 			$parser = new ArticleParser( $article );
 
 			if ( empty( $parser->getId() ) || empty( $parser->getSlug() ) ) {

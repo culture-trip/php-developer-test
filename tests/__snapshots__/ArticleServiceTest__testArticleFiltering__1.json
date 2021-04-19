@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Test title 1",
+        "slug": "test-slug-1",
+        "content": []
+    },
+    {
+        "id": 2,
+        "title": "",
+        "slug": "test-slug-2",
+        "content": []
+    }
+]

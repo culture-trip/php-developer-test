@@ -5,6 +5,7 @@ namespace App;
 use Exception;
 use ArrayObject;
 use PHPHtmlParser\Dom;
+use PHPHtmlParser\Options;
 use PHPHtmlParser\Dom\Node\AbstractNode;
 
 class ArticleParser extends ArrayObject {
@@ -25,7 +26,9 @@ class ArticleParser extends ArrayObject {
 	private static function parseContent( string $rawContent ) : array {
 		$dom = new Dom;
 		try {
-			$dom->loadStr( $rawContent );
+			$options = new Options();
+			$options->setPreserveLineBreaks( true );
+			$dom->loadStr( $rawContent, $options );
 			$children = $dom->getChildren();
 		} catch ( Exception $e ) {
 			return [];
@@ -46,9 +49,17 @@ class ArticleParser extends ArrayObject {
 					];
 					break;
 				default:
+					$text = trim( $child->innerhtml() );
+
+					if ( empty( $text ) ) {
+						break;
+					}
+
+					$text = preg_replace( '/\n{1,}/', '<br />', $text );
+
 					$content[] = [
 						'type'    => 'paragraph',
-						'content' => $child->innerhtml(),
+						'content' => $text,
 					];
 			}
 		}
@@ -86,9 +97,9 @@ class ArticleParser extends ArrayObject {
 
 	public function getArticle() : array {
 		return [
-			'id' => $this->id,
-			'title' => $this->title,
-			'slug' => $this->slug,
+			'id'      => $this->id,
+			'title'   => $this->title,
+			'slug'    => $this->slug,
 			'content' => $this->content,
 		];
 	}

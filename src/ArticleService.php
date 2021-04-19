@@ -13,6 +13,11 @@ class ArticleService extends ArticleCollection {
 
 		foreach ( $rawArticles as $article ) {
 			$parser = new ArticleParser( $article );
+
+			if ( empty( $parser->getId() ) || empty( $parser->getSlug() ) ) {
+				continue;
+			}
+
 			$this->articles[] = $parser->getArticle();
 		}
 	}

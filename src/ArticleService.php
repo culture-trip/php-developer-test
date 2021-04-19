@@ -14,7 +14,7 @@ class ArticleService extends ArticleCollection {
 		foreach ( $articles as $article ) {
 			$parser = new ArticleParser( $article );
 
-			if ( empty( $parser->getId() ) || empty( $parser->getSlug() ) ) {
+			if ( $parser->getId() <= 0 || empty( $parser->getSlug() ) ) {
 				continue;
 			}
 

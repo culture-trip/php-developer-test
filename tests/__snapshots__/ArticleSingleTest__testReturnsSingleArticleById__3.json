@@ -1,0 +1,16 @@
+{
+    "id": 3,
+    "title": "Places to visit in New York",
+    "slug": "places-to-visit-in-new-york",
+    "content": [
+        {
+            "type": "paragraph",
+            "content": "<h1>New York<\/h1>"
+        },
+        {
+            "type": "image",
+            "src": "https:\/\/via.placeholder.com\/1600x1200",
+            "alt": "New York"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "id": 2,
+    "title": "Places to stay in Paris",
+    "slug": "places-to-stay-in-paris",
+    "content": [
+        {
+            "type": "paragraph",
+            "content": "<h1>Paris<\/h1><br \/>Here is a list of the best places to stay in Paris:"
+        },
+        {
+            "type": "paragraph",
+            "content": "<strong>Hotel 1<\/strong><br \/>Hotel 1 description"
+        },
+        {
+            "type": "paragraph",
+            "content": "<strong>Hotel 2<\/strong><br \/>Hotel 2 description"
+        }
+    ]
+}

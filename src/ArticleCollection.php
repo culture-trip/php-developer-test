@@ -11,7 +11,10 @@ abstract class ArticleCollection {
 
 	public function getArticleById( int $id ) : ?array {
 		foreach ( $this->articles as $article ) {
-			if ( (int) $article->id === $id ) {
+			if (
+				( is_object( $article ) && (int) $article->id === $id ) ||
+				( is_array( $article ) && (int) $article['id'] === $id )
+			) {
 				return $article;
 			}
 		}

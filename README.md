@@ -20,6 +20,8 @@ For the content field, the raw text or HTML should be parsed and transformed int
 ```
 The inner paragraph formatting and tags should be preserved.
 
+You may use a library like [PHP HTML Parser](https://github.com/paquettg/php-html-parser), and/or any other libraries at your discretion.
+
 ### Considerations
 - Sanity checking;
 - Error handling;

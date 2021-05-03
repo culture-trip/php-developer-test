@@ -54,7 +54,7 @@ abstract class TestCase extends PHPUnit_TestCase {
 		return ( new ServerRequestFactory() )->createServerRequest( $method, $uri, $serverParams );
 	}
 
-	protected function createApplication() {
+	protected function createApplication(): void {
 		// Instantiate the application
 		$this->app = $app = AppFactory::create();
 

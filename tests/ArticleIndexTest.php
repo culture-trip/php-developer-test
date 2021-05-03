@@ -1,12 +1,15 @@
 <?php
 
-use Tests\TestCase;
+namespace Tests;
+
 
 class ArticleIndexTest extends TestCase {
+
 	public function testIndexReturnsText() : void {
+
 		$request = $this->createRequest( 'GET', '/' );
 		$res     = $this->app->handle( $request );
 
-		self::assertEquals( 'Hello world!', (string) $res->getBody() );
+		self::assertJson( (string) $res->getBody() );
 	}
 }
